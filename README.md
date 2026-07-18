@@ -39,7 +39,7 @@ Para que o site de viagens seja facilmente encontrado nos motores de busca, apli
 > [!TIP]
 > Adicione aqui um print do seu projeto (versão Mobile e Desktop) ou o link do projeto rodando ao vivo!
 
-* **Link do Deploy:** jeandomicianoportifolio.com
+* **Link do Deploy:**  jeandomicianoportifolio.com
 
 ---
 
