@@ -1,3 +1,8 @@
+.categories .section-title {
+    width: 312px;
+    margin: 0 auto;
+}
+
 .categories-cards {
     display: flex;
     flex-direction: column;
@@ -7,15 +12,16 @@
 }
 
 .categories-cards .card {
-  width: 312px;
-  height: 220px;
-  background-color: var(--background-secundary-color);
-  text-align: center;
-  border-radius: 16px;
-  padding: 24px;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: c=var(--text-primary-color);
+    width: 312px;
+    height: 220px;
+    background-color: var(--background-secundary-color);
+    text-align: center;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* CORREÇÃO 1: Removido o 'c=' antes de var */
+    color: var(--text-primary-color); 
 }
 
 .categories-cards .card h3 {
@@ -27,3 +33,48 @@
     padding-top: 50px;
 }
 
+.categories-cards .card.single-line.transfer img {
+    margin: 10px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .categories-cards, 
+    .offers-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        max-width: 700px; 
+        margin: 64px auto 0; 
+    }
+
+    .categories-cards .card,
+    .offers-cards .card {
+        width: calc(50% - 12px); 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .categories-cards,
+    .offers-cards {
+        max-width: 900px; 
+    }
+    
+    .categories-cards .card,
+    .offers-cards .card {
+        width: 430px; 
+    }
+}
+
+@media screen and (min-width: 1940px) {
+    .categories-cards,
+    .offers-cards {
+        max-width: 1100px; 
+    }
+
+    .categories-cards .card,
+    .offers-cards .card {
+        width: 500px; 
+    }
+}

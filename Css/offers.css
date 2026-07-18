@@ -65,35 +65,42 @@
 }
 
 @media screen and (min-width: 768px) {
-  .offers-cards .offers-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    .categories-cards, 
+    .offers-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 700px; 
+        margin: 64px auto 0; 
+    }
+
+    .categories-cards .card,
+    .offers-cards .card {
+        width: calc(50% - 12px); 
+    }
 }
 
 @media screen and (min-width: 1024px) {
-  .offers-cards .card {
-    width: 420px;
-    height: 308px;
-  }
-  .offers-cards .card header h3 {
-    font-size: 48px;
-  }
-  .offers-cards .card header span {
-    font-size: 40px;
-  }
+    .categories-cards,
+    .offers-cards {
+        max-width: 900px; 
+    }
+    
+    .categories-cards .card,
+    .offers-cards .card {
+        width: 430px; 
+    }
 }
 
-@media screen and (min-width: 1440px) {
-  .offers-cards .card {
-    width: 588px;
-  }
-}
+@media screen and (min-width: 1940px) {
+    .categories-cards,
+    .offers-cards {
+        max-width: 1100px; 
+    }
 
-@media screen and (min-width: 1920px) {
-  .offers-cards {
-    width: 1250px;
-    margin: 0 auto;
-  }
+    .categories-cards .card,
+    .offers-cards .card {
+        width: 500px; 
+    }
 }
