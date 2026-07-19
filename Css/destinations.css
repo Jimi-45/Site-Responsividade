@@ -1,6 +1,6 @@
 .destinations {
   width: 312px;
-  margin: 0 auto;
+  margin: 84px auto 104px;
 }
 
 .destinations-items {
@@ -51,7 +51,7 @@
   text-align: center;
 }
 
-@media  and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .destinations {
     width: 648px;
   }
@@ -60,15 +60,20 @@
     width: 100%;
     height: 452px;
   }
+}
 
-  .destinations .item.tokyo .img-item {
-    background: url(../image/Tokyo-mobile.jpg);
-    background-size: cover;
+@media screen and (min-width: 1024px) {
+  .destinations {
+    width: 588px;
+    flex-direction: row;
   }
 
-  .destinations .item.osaka .img-item {
-    background: url(../image/Osaka-mobile.jpg);
-    background-size: cover;
+  .destinations .item .img-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
   }
 }
 
