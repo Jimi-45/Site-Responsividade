@@ -62,20 +62,34 @@
   }
 }
 
+
 @media screen and (min-width: 1024px) {
   .destinations {
-    width: 588px;
-    flex-direction: row;
-  }
+      width: 960px;
+      margin: 84px auto 104px;
+    }
 
-  .destinations .item .img-item {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 15px;
+    .destinations-items {
+      flex-direction: row; 
+      justify-content: center;
+      align-items: stretch;
+      gap: 32px;
+    }
+
+    .destinations .item {
+      flex: 1;
+    }
+
+    .destinations .item.tokyo .img-item {
+      background: url(../image/Tokyo-tablet-desk.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .destinations .item.osaka .img-item {
+      background: url(../image/Osaka-tablet-desk.jpg) no-repeat;
+      background-size: cover;
+    }
   }
-}
 
 
 
