@@ -3,7 +3,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     height: 460px;
-    margin-top: 24px;
+    margin: 24px 24px 88px;
+}
+
+.payments .content-container .text-content {
+  margin: 24px 24px;
+  text-align: left;
 }
 
 .payments .content-container .image-gallery .image {
@@ -22,7 +27,7 @@
 }
 
 .payments .content-container .image-gallery .image.thirdy {
-    background: url(../image/gallery1-mobile.png) no-repeat;
+    background: url(../image/gallery3-mobile.png) no-repeat;
     background-size: cover;
 }
 
@@ -47,14 +52,24 @@
 }
 }
 
-@media screen and (min-width: 1440px) {
-    .payments .content-container {
-        justify-content: space-between;
-    }
-    .payments .content-container .text-content {
-        width: 360px;
-    }
-    .payments .content-container .image-gallery {
+@media screen and (min-width: 1024px) {
+  
+  .payments .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    max-width: 1200px;   
+    margin: 40px auto;
+    margin-top: 64px;   
+  }
+
+  .payments .content-container .text-content {
+    width: 360px;
+    margin: 0;
+  }
+
+  .payments .content-container .image-gallery {
     width: 790px;
-}
+    margin: 0;
+  }
 }
