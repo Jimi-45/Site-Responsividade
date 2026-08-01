@@ -1,5 +1,15 @@
-header {
+.inicial {
   background-color: var(--background-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 38px 48px;
+  position: relative;
+}
+
+
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
